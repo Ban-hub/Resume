@@ -2,45 +2,53 @@
 <html>
 <head>
   <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
-    /* Define the container for the lists */
-    .list-container {
-      display: flex; /* Use flexbox layout */
-      flex-wrap: wrap; /* Allow the items to wrap to the next line */
-    }
-    /* Define the style for each list item */
-    .list-item {
-      width: calc(50% - 10px); /* Set the width to 50% and subtract 10px for spacing */
-      margin: 5px; /* Add some spacing between the items */
-      padding: 10px; /* Add some padding to the items */
-      background-color: #f1f1f1; /* Add a light gray background color */
-      border-radius: 5px; /* Add rounded corners */
+    /* Add some custom styles to the cards */
+    .card {
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
   <h1>My Portfolio</h1>
-  <div class="list-container">
-    <div class="list-item">
-      <h2>Education</h2>
-      <ul>
-        <li>BSc in CSE from BRAC University (cgpa 3.9/4)</li>
-        <li>High School from St. Joseph Higher Secondary School</li>
-      </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h2>Education</h2>
+            <ul>
+              <li>BSc in CSE from BRAC University (cgpa 3.9/4)</li>
+              <li>High School from St. Joseph Higher Secondary School</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h2>Awards</h2>
+            <ul>
+              <li>Champion in "Obstacle avoiding robobt race" at "Quanta-2016"</li>
+              <li>3rd place in "Inter University Chess Tournament - 2019"</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="list-item">
-      <h2>Awards</h2>
-      <ul>
-        <li>Champion in "Obstacle avoiding robobt race" at "Quanta-2016"</li>
-        <li>3rd place in "Inter University Chess Tournament - 2019"</li>
-      </ul>
-    </div>
-    <div class="list-item">
-      <h2>Experiences</h2>
-      <ul>
-        <li>Student Tutor at BRAC University</li>
-        <li>President at Chess Club of BRAC University</li>
-      </ul>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h2>Experiences</h2>
+            <ul>
+              <li>Student Tutor at BRAC University</li>
+              <li>President at Chess Club of BRAC University</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
