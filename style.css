@@ -1,56 +1,20 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
-}
-
-nav {
-    background-color: #eee;
-    padding: 0.5em;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-nav li {
-    margin-right: 1em;
-}
-
-main {
-    padding: 1em;
-}
-
-section {
-    margin-bottom: 1em;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 0.5em;
-}
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-}
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
   
-.card {
-    width: 30%; /* adjust as desired */
-    background-color: #f2f2f2;
-    padding: 1em;
-    margin: 1em;
-    box-shadow: 2px 2px 8px #ccc; /* add a subtle shadow to the card */
-}
+  @keyframes slideInLeft {
+    from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInLeft {
+    animation-name: slideInLeft;
+  }
+  
